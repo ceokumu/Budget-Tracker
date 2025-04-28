@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="budget tracker,expense manager,personal finance app,money management tool,track spending,financial planning,save money,monthly budgeting,expense tracking">
+    <meta name="description" content="Easily manage your finances with our intuitive budget tracker.Monitor expenses,set savings goals,and track control of your money today!">
+    <meta name="author" content="Kumudhini">
+    <link rel="icon" href="img/budget-favicon.png" type="image/x-icon">
+    <title>Smart Budget Tracker | Manage your Finances</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Smart Budget Tracker</h1>
+        </header>
+        <main></main>
+            <div id="balance-section">
+                <h2>Total Balance:<span id="Balance"></span></h2>
+            </div>
+            <div id="input-section">
+                <input required type="text" id="description" class="inputs" placeholder="Description">
+                <input required type="number" id="amount" class="inputs" placeholder="amount">
+                <select id="type" class="inputs">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+            </div>
+            <button onclick="addTransaction()" id="button" class="add-btn">Add</button>
+            <ul id="transaction-list"></ul>
+            <div id="motivatio" id="quote-container">
+                <p id="quote"></p>
+            </div>
+        </main>    
+    </div>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
