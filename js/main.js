@@ -68,7 +68,7 @@ buttons.addEventListener("click",function removing(index){
 
 //Updating Quotes
 function showQuote(balance){
-    const quotes=["Keep Going","Small savings today.Big rewards tomorrow","You've got controll over your money","Save smart, Live better","Budgeting is the key to financial frredom"];
+    const quotes=["Keep Going","Small savings today.Big rewards tomorrow","You've got controll over your money","Save smart, Live better","Budgeting is the key to financial freedom"];
     let getQuote=Math.floor(Math.random()*quotes.length)
     let quote=balance>=0 ? quotes[getQuote]:"It's Okay.You can always bounce back!";
     document.getElementById("quote").innerText=quote;
