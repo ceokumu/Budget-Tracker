@@ -88,7 +88,7 @@ h2{
 }
 .inputs{
     width:80%;
-    font-family: cursive;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     margin-top: 0.5em;
     font-size: var(--INPUT-FONTSIZE);
     background: transparent;
@@ -128,7 +128,7 @@ ul{
     list-style:decimal;
     list-style-position: inside ;
     font-size: clamp(0.25rem,2.5vh,1.8rem);
-    font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding:0.5em;
 }
 ul li{
@@ -170,6 +170,7 @@ svg{
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s  linear forwards;
+    visibility: hidden;
 }
 @keyframes fadeIn{
     to{

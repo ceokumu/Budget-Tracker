@@ -54,6 +54,7 @@ function updateUi(){
 }
     document.getElementById("Balance").innerText=`$${balance}`;
     document.getElementById("transaction-list").innerHTML=transList;
+    quote.style.visibility="visible";
     showQuote(balance);
     let removebtn=document.querySelectorAll("#Delete");
 removebtn.forEach(buttons=>{
@@ -67,10 +68,11 @@ buttons.addEventListener("click",function removing(index){
 
 //Updating Quotes
 function showQuote(balance){
-    const quotes=["Keep Going","Small savings today.Big rewards tomorrow","you've got controll over your money"];
+    const quotes=["Keep Going","Small savings today.Big rewards tomorrow","You've got controll over your money","Save smart, Live better","Budgeting is the key to financial frredom"];
     let getQuote=Math.floor(Math.random()*quotes.length)
     let quote=balance>=0 ? quotes[getQuote]:"It's Okay.You can always bounce back!";
     document.getElementById("quote").innerText=quote;
+    
 }
 
 
